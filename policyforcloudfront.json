@@ -1,0 +1,21 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"cloudfront:CreateDistribution",
+				"cloudfront:GetDistribution",
+				"cloudfront:ListDistributions",
+				"cloudfront:TagResource",
+				"cloudfront:UpdateDistribution"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": "wafv2:CreateWebACL",
+			"Resource": "arn:aws:wafv2:us-east-1:037230611102:global/managedruleset/*/*"
+		}
+	]
+}
